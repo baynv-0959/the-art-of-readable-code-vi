@@ -1,7 +1,7 @@
 # CHƯƠNG 11 : Một nhiệm vụ tại một thời điểm
 
 ![](https://i.imgur.com/nmnce4t.png)
-Đoạn code thực hiện nhiều thứ một lúc sẽ trở nên khó hiểu nếu. Một khối mã duy nhất có thể khởi tạo một đối tượng mới, xử lý dữ liệu, phân tích đầu vào, và xử lý logic nghiệp vụ cùng một lúc. Nếu tất cả chúng được kết hợp cùng nhau, nó sẽ trở nên khó hiểu hơn là việc mỗi nhiệm vụ được sử lý và hoàn thành riêng biệt với nhau.
+Đoạn code thực hiện nhiều thứ một lúc sẽ trở nên khó hiểu. Một khối mã duy nhất có thể khởi tạo một đối tượng mới, xử lý dữ liệu, phân tích đầu vào, và xử lý logic nghiệp vụ cùng một lúc. Nếu tất cả chúng được kết hợp cùng nhau, nó sẽ trở nên khó hiểu hơn là việc mỗi nhiệm vụ được sử lý và hoàn thành riêng biệt với nhau.
 
 > KEY IDEA
 > Code phải được tổ chức sao cho chỉ thực hiện một nhiệm vụ tại một thời điểm.
@@ -73,7 +73,7 @@ Bây giờ phần còn lại của mã có thể giải quyết nhiệm vụ th�
 ```javascript=
 var vote_changed = function (old_vote, new_vote) {
     var score = get_score();
-    score -= vote_value(old_vote); // xõa vote cũ
+    score -= vote_value(old_vote); // xóa vote cũ
     score += vote_value(new_vote); // thêm vote mới.
     set_score(score);
 };
@@ -264,7 +264,7 @@ void UpdateCounts(HttpDownload hd) {
 }
 ```
 
-Như bạn có thể thấy, có rất nhiều mã, rất nhiều logic và thậm chí là một vài dòng mã lặp lại. Mã này đoặc chẳng không thú vị.
+Như bạn có thể thấy, có rất nhiều mã, rất nhiều logic và thậm chí là một vài dòng mã lặp lại. Mã này đọc chẳng không thú vị.
 
 Đặc biệt, mã này chuyển đổi qua lại giữa các tác vụ khác nhau. Dưới đây là các nhiệm vụ khác nhau được xen kẽ trong toàn bộ mã:
 
